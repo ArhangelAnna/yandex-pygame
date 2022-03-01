@@ -42,8 +42,8 @@ def game_over():
     my_font = pygame.font.SysFont('сч', 50)
 
     game_over_surface = my_font.render(
-        f'Ты проиграл '
-        f'Твой максимум:' + str(score), True, "#683056")
+        f'Ты проиграл. '
+        f'Ты набрал:' + str(score), True, "#683056")
 
     game_over_rect = game_over_surface.get_rect()
 
