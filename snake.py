@@ -61,6 +61,8 @@ def game_over():
 
 while True:
     for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            game_over()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP:
                 change_to = 'UP'
